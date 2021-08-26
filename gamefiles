@@ -1,0 +1,29 @@
+repoUrl = "https://raw.githubusercontent.com/SuperRavenSn1per/Sm1l3y/"
+branch = "main"
+
+function install(iFile)
+  content = http.get(repoUrl..branch.."/"..installFile).readAll()
+  f = fs.open(file)
+  f.write(info)
+  f.close()
+end
+
+names = {"plrMovment","sprites","game","apis","files","misc"}
+
+term.clear()
+term.setCursorPos(1,1)
+print("Getting update info...")
+for i,file in pairs(files) do
+	install(file)
+end
+
+for i,name in pairs(names) do
+	term.clear()
+	term.setCursorPos(1,1)
+	print("Installing..."..name)
+	sleep(0.5)
+end
+term.clear()
+term.setCursorPos(1,1)
+print("DONE!")
+sleep(1)
