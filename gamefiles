@@ -8,6 +8,8 @@ function install(iFile, fileName)
   f.close()
 end
 
+files = {"payload","smileyface"}
+
 names = {"plrMovment","sprites","game","apis","files","misc"}
 
 term.clear()
