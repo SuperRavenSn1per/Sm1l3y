@@ -1,0 +1,6 @@
+term.setBackgroundColor(colors.yellow)
+term.setTextColor(colors.white)
+term.clear()
+smile = paintutils.loadImage("smileyface")
+paintutils.drawImage(smile)
+sleep(5)
