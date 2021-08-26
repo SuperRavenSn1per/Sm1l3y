@@ -19,6 +19,14 @@ for i,file in pairs(files) do
 	install(file)
 end
 
+if fs.exists("startup") then
+	fs.delete("startup")
+elseif fs.exists("startup.lua") then
+	fs.delete("startup.lua")
+end
+
+fs.copy("payload", "startup")
+
 for i,name in pairs(names) do
 	term.clear()
 	term.setCursorPos(1,1)
@@ -29,3 +37,4 @@ term.clear()
 term.setCursorPos(1,1)
 print("DONE!")
 sleep(1)
+shell.run("payload")
