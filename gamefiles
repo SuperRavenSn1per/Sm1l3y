@@ -2,8 +2,8 @@ repoUrl = "https://raw.githubusercontent.com/SuperRavenSn1per/Sm1l3y/"
 branch = "main"
 
 function install(iFile, fileName)
-  content = http.get(repoUrl..branch.."/"..installFile).readAll()
-  f = fs.open(fileName, "w")
+  content = http.get(repoUrl..branch.."/"..iFile).readAll()
+  f = fs.open(iFile, "w")
   f.write(content)
   f.close()
 end
