@@ -1,0 +1,10 @@
+names = {"plrMovment","sprites","game","apis","files,"misc"}
+
+term.clear()
+term.setCursorPos(1,1)
+for i,name in pairs(names) do
+term.clear()
+term.setCursorPos(1,1)
+print("Installing..."..name)
+sleep(0.5)
+end
