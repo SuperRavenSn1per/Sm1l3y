@@ -1,0 +1,3 @@
+term = require("term")
+
+term.clear()
